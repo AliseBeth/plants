@@ -1226,9 +1226,7 @@ time, mark, audio, video {
         margin: 0px 0px 0px -53px;
         transition: all 1s ease;
     }
-    .little-btn:hover {
-        transform: rotate(180deg);
-    }
+    
 }
 
 
