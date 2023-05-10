@@ -733,15 +733,18 @@ time, mark, audio, video {
         color: #E06733;
         background-color: #EDF2EC;
         cursor: pointer;
+        transition: 1s;
     }
     .serv-btns button:hover {
         background-color: #E06733;
         color: #ffffff;
+        transition: 1s;
     }
     .one.chosen {
         background-color: #b64f23;
         border: 1px solid #b64f23;
         color: #ffffff;
+        
     }
     .services {
         display: flex;
@@ -766,7 +769,8 @@ time, mark, audio, video {
         text-align: center;
         display: flex;
         flex-direction: column;
-        margin: 23px 58px;    
+        margin: 23px 58px; 
+        transition: 1s;   
     }
     .txt {
         border: 1px solid #E3E1D5;
@@ -781,6 +785,7 @@ time, mark, audio, video {
     }
     .blur {
         filter: blur(4px);
+        transition: 1s;
     }
     
 
@@ -1137,9 +1142,11 @@ time, mark, audio, video {
     }
     .changeble-btn:hover {
         background-color: #D6E7D2;
+        transition: 1s;
     }
     .little-btn:hover ~ .changeble-btn{
         background-color: #D6E7D2;
+        transition: 1s;
     }
 
     .prices-items {
@@ -1163,6 +1170,7 @@ time, mark, audio, video {
         width: 100px;
         margin-top: 16px;
         margin-bottom: 16px;
+        transition: 1s;
     }
     .opened {
         background-color: #D6E7D2;
@@ -1222,9 +1230,8 @@ time, mark, audio, video {
         border-radius: 5px;
         padding: 12px 34px 12px 30px; 
         background-color: #ffffff;
-    }
-    .btn-call-us button {
         cursor: pointer;
+        transition: 1s;
     }
     .btn-call-us button:hover {
         background-color:#E06733;
@@ -1607,7 +1614,7 @@ time, mark, audio, video {
     .contact-us {   
         display: flex;
         flex-direction: column;
-        margin: 0px 0px 0px 113px;   
+        margin: 0px 0px 0px 113px;
     }
     .lady {
         
@@ -1672,6 +1679,7 @@ time, mark, audio, video {
     .choose-city ul li:hover {
         color: #717171;
         border-bottom: 1px solid #717171;
+        transition: 1s;
     }
     .city-active {
         background-color: #C1E698;
