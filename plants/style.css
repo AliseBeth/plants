@@ -732,6 +732,7 @@ time, mark, audio, video {
     .one {
         color: #E06733;
         background-color: #EDF2EC;
+        cursor: pointer;
     }
     .serv-btns button:hover {
         background-color: #E06733;
