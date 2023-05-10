@@ -1,2 +1,0 @@
-# plants
-site about plants
