@@ -19,26 +19,17 @@ $(document).ready(function() {
         && $('.lawcon').hasClass('blur')) {
             $('.plancon').removeClass('blur');
             $('.lawcon').removeClass('blur');
-            $('.garden-btn').removeClass('chosen');
         } else if ($('.garcon').hasClass('blur')) {
             $('.garcon').removeClass('blur');
-            $('.garden-btn').toggleClass('chosen');
-        } else if (!$('.garcon').hasClass('blur') && $('.plancon').hasClass('blur')
-        || $('.lawcon').hasClass('blur')) {
-            $('.garcon').toggleClass('blur');
-            $('.garden-btn').removeClass('chosen');
         } else if ($('.plancon').hasClass('blur') && $('.lawcon').hasClass('blur')) {
             return;
         } else if ($('.lawcon').hasClass('blur')) {
             $('.plancon').toggleClass('blur');
-            $('.garden-btn').toggleClass('chosen');
         } else if ($('.plancon').hasClass('blur')) {
             $('.lawcon').toggleClass('blur');
-            $('.garden-btn').toggleClass('chosen');
         } else {
             $('.lawcon').toggleClass('blur');
             $('.plancon').toggleClass('blur');
-            $('.garden-btn').toggleClass('chosen');
         };
     });
     $('.lawn-btn').click(function() {
@@ -49,26 +40,17 @@ $(document).ready(function() {
         && $('.garcon').hasClass('blur')) {
             $('.plancon').removeClass('blur');
             $('.garcon').removeClass('blur');
-            $('.lawn-btn').removeClass('chosen');
         } else if ($('.lawcon').hasClass('blur')) {
-            $('.lawn-btn').toggleClass('chosen');
             $('.lawcon').removeClass('blur');
-        } else if (!$('.lawcon').hasClass('blur') && $('.plancon').hasClass('blur')
-        || $('.garcon').hasClass('blur')) {
-            $('.lawcon').toggleClass('blur');
-            $('.lawn-btn').removeClass('chosen');
         } else if ($('.garcon').hasClass('blur') && $('.plancon').hasClass('blur')) {
             return;
         } else if ($('.garcon').hasClass('blur')) {
             $('.plancon').toggleClass('blur');
-            $('.lawn-btn').toggleClass('chosen');
         } else if ($('.plancon').hasClass('blur')) {
             $('.garcon').toggleClass('blur');
-            $('.lawn-btn').toggleClass('chosen');
         } else {
             $('.garcon').toggleClass('blur');
             $('.plancon').toggleClass('blur');
-            $('.lawn-btn').toggleClass('chosen');
         };
     });
     $('.plant-btn').click(function() {
@@ -79,27 +61,17 @@ $(document).ready(function() {
         && $('.garcon').hasClass('blur')) {
             $('.lawcon').removeClass('blur');
             $('.garcon').removeClass('blur');
-            $('.plant-btn').removeClass('chosen');
         } else if ($('.plancon').hasClass('blur')) {
             $('.plancon').removeClass('blur');
-            $('.plant-btn').toggleClass('chosen');
-        } else if (!$('.plancon').hasClass('blur') && $('.lawcon').hasClass('blur')
-        || $('.garcon').hasClass('blur')) {
-            $('.plancon').toggleClass('blur');
-            $('.plant-btn').removeClass('chosen');
-        
         } else if ($('.garcon').hasClass('blur') && $('.lawcon').hasClass('blur')) {
             return;
         } else if ($('.garcon').hasClass('blur')) {
             $('.lawcon').toggleClass('blur');
-            $('.plant-btn').toggleClass('chosen');
         } else if ($('.lawcon').hasClass('blur')) {
             $('.garcon').toggleClass('blur');
-            $('.plant-btn').toggleClass('chosen');
         } else {
             $('.garcon').toggleClass('blur');
             $('.lawcon').toggleClass('blur');
-            $('.plant-btn').toggleClass('chosen');
         };
     });
 
@@ -112,13 +84,6 @@ $(document).ready(function() {
     $('.clickable-1').click(function() {
         if ($('.added-info1').hasClass('hidden') && $('.added-info2').hasClass('hidden')
         && $('.added-info3').hasClass('hidden')) {
-            if ($('.city').hasClass('city-active') && !$('.choose-city').hasClass('hidden')) {
-                $('.choose-city').toggleClass('hidden');
-                $('.closed-btn').removeClass('hidden');
-                $('.opened-btn').toggleClass('hidden');
-                $('.city').removeClass('city-active');
-                $('.city-button').removeClass('delete-shadow');
-                $('.arrow-btn').removeClass('city-active');}
             $('.btn-one-basics').removeClass('little-btn').toggleClass('hidden');
             $('.btn-two-basics').removeClass('hidden').toggleClass('little-btn-opened');
             $('.added-info1').removeClass('hidden').toggleClass('opened-btn');
@@ -154,14 +119,7 @@ $(document).ready(function() {
     });
     $('.clickable-2').click(function() {
         if ($('.added-info1').hasClass('hidden') && $('.added-info2').hasClass('hidden')
-        && $('.added-info3').hasClass('hidden')) { 
-            if ($('.city').hasClass('city-active') && !$('.choose-city').hasClass('hidden')) {
-                $('.choose-city').toggleClass('hidden');
-                $('.closed-btn').removeClass('hidden');
-                $('.opened-btn').toggleClass('hidden');
-                $('.city').removeClass('city-active');
-                $('.city-button').removeClass('delete-shadow');
-                $('.arrow-btn').removeClass('city-active');}
+        && $('.added-info3').hasClass('hidden')) {    
             $('.btn-one-standard').removeClass('little-btn').toggleClass('hidden');
             $('.btn-two-standard').removeClass('hidden').toggleClass('little-btn-opened');
             $('.added-info2').removeClass('hidden').toggleClass('opened-btn');
@@ -198,13 +156,6 @@ $(document).ready(function() {
     $('.clickable-3').click(function() {
         if ($('.added-info1').hasClass('hidden') && $('.added-info2').hasClass('hidden')
         && $('.added-info3').hasClass('hidden')) {
-            if ($('.city').hasClass('city-active') && !$('.choose-city').hasClass('hidden')) {
-                $('.choose-city').toggleClass('hidden');
-                $('.closed-btn').removeClass('hidden');
-                $('.opened-btn').toggleClass('hidden');
-                $('.city').removeClass('city-active');
-                $('.city-button').removeClass('delete-shadow');
-                $('.arrow-btn').removeClass('city-active');}
             $('.btn-one-pro-care').removeClass('little-btn').toggleClass('hidden');
             $('.btn-two-pro-care').removeClass('hidden').toggleClass('little-btn-opened');
             $('.added-info3').removeClass('hidden').toggleClass('opened-btn');
@@ -245,7 +196,7 @@ $(document).ready(function() {
 
 
 
-    $('.city-button').click(function() {
+    $('.arrow-btn').click(function() {
         if ($('.city').hasClass('city-active') && !$('.choose-city').hasClass('hidden')) {
             $('.choose-city').toggleClass('hidden');
             $('.closed-btn').removeClass('hidden');
@@ -254,22 +205,6 @@ $(document).ready(function() {
             $('.city-button').removeClass('delete-shadow');
             $('.arrow-btn').removeClass('city-active');
         } else if ($('.city').hasClass('city-active')) {
-            if ($('.added-info1').hasClass('opened-btn')) {
-                $('.btn-one-basics').removeClass('hidden').toggleClass('little-btn');
-                $('.btn-two-basics').removeClass('little-btn-opened').toggleClass('hidden');
-                $('.added-info1').removeClass('opened-btn').toggleClass('hidden');
-                $('.basics').removeClass('opened');
-            } else if ($('.added-info2').hasClass('opened-btn')) {
-                $('.btn-one-standard').removeClass('hidden').toggleClass('little-btn');
-                $('.btn-two-standard').removeClass('little-btn-opened').toggleClass('hidden');
-                $('.added-info2').removeClass('opened-btn').toggleClass('hidden');
-                $('.standard').removeClass('opened');
-            } else if ($('.added-info3').hasClass('opened-btn')) {
-                $('.btn-one-pro-care').removeClass('hidden').toggleClass('little-btn');
-                $('.btn-two-pro-care').removeClass('little-btn-opened').toggleClass('hidden');
-                $('.added-info3').removeClass('opened-btn').toggleClass('hidden');
-                $('.pro-care').removeClass('opened');
-            };
             $('.choose-city').removeClass('hidden');
             $('.closed-btn').toggleClass('hidden');
             $('.opened-btn').removeClass('hidden');
@@ -297,23 +232,6 @@ $(document).ready(function() {
             $('.city').toggleClass('city-active');
             $('.city-button').toggleClass('delete-shadow');
             $('.arrow-btn').toggleClass('city-active');
-
-            if ($('.added-info1').hasClass('opened-btn')) {
-                $('.btn-one-basics').removeClass('hidden').toggleClass('little-btn');
-                $('.btn-two-basics').removeClass('little-btn-opened').toggleClass('hidden');
-                $('.added-info1').removeClass('opened-btn').toggleClass('hidden');
-                $('.basics').removeClass('opened');
-            } else if ($('.added-info2').hasClass('opened-btn')) {
-                $('.btn-one-standard').removeClass('hidden').toggleClass('little-btn');
-                $('.btn-two-standard').removeClass('little-btn-opened').toggleClass('hidden');
-                $('.added-info2').removeClass('opened-btn').toggleClass('hidden');
-                $('.standard').removeClass('opened');
-            } else if ($('.added-info3').hasClass('opened-btn')) {
-                $('.btn-one-pro-care').removeClass('hidden').toggleClass('little-btn');
-                $('.btn-two-pro-care').removeClass('little-btn-opened').toggleClass('hidden');
-                $('.added-info3').removeClass('opened-btn').toggleClass('hidden');
-                $('.pro-care').removeClass('opened');
-            };
         } else if ($('.closed-btn').hasClass('hidden')) {
             $('.choose-city').toggleClass('hidden');
             $('.closed-btn').removeClass('hidden');

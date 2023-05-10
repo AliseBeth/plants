@@ -10,8 +10,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet"> 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="../script.js"></script> 
+  <script src="../plants/script.js"></script> 
 
+  <script src="../plants/index.js"></script> 
 </head>
 
 <body>
@@ -49,9 +50,9 @@
           <h1>We grow <span>plants</span> and give you oxygen</h1>
           <p class="welcome-lorem">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-          <form action='#about' class="learn-more">
+          <div class="learn-more">
             <button>LEARN MORE</button>
-          </form> 
+          </div> 
         </div> 
       </div>                          
     </section>
@@ -138,9 +139,7 @@
           <div class='text-call-us'>
             <h3>Our best <span>gardeners</span> are <br>ready to help you</h3>
             <div class='btn-call-us'>
-              <form action="#contacts">
-                <button>Contact us</button>
-              </form>
+              <button><a href='#contacts'>Contact us</a></button>
             </div>
           </div>          
           <img src='../plants/img/leafs2.png' alt="Leafs2">                   
@@ -148,42 +147,36 @@
         <div class='prices-block'>
           <h2>Prices</h2>
           <div class='prices-items'>
-            <div class='price-item clickable-1'>
-              <img class='little-btn btn-one-basics' src='../plants/img/accordion_btn.svg' alt="accordion btn">
-              <img class="hidden btn-two-basics" src='../plants/img/accordion_btn3.svg' alt="accordion btn">
+            <div class='price-item'>
+              <img class='little-btn btn-one-basics clickable-1' src='../plants/img/accordion_btn.svg' alt="accordion btn">
+              <img class="hidden btn-two-basics clickable-1" src='../plants/img/accordion_btn3.svg' alt="accordion btn">
               <div class="changeble-btn basics">Basics
                 <div class="hidden added-info1">
                   <p>Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
                   <p class="per-hour"><span>$15</span> / per hour</p>
-                  <form action="#contacts">
-                    <button>Order</button>
-                  </form>
+                  <button><a href='#contacts'>Order</a></button>
                 </div>
               </div>
             </div>
-            <div class='price-item clickable-2'>
-              <img class= 'little-btn btn-one-standard' src='../plants/img/accordion_btn.svg' alt="accordion btn">
-              <img class="hidden btn-two-standard" src='../plants/img/accordion_btn3.svg' alt="accordion btn">
+            <div class='price-item'>
+              <img class= 'little-btn btn-one-standard clickable-2' src='../plants/img/accordion_btn.svg' alt="accordion btn">
+              <img class="hidden btn-two-standard clickable-2" src='../plants/img/accordion_btn3.svg' alt="accordion btn">
               <div class="changeble-btn standard">Standard
                 <div class="hidden added-info2">
                   <p>Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
                   <p class="per-hour"><span>$25</span> / per hour</p>
-                  <form action="#contacts">
-                    <button>Order</button>
-                  </form>
+                  <button><a href='#contacts'>Order</a></button>
                 </div>
               </div>
             </div>
-            <div class='price-item clickable-3'>
-              <img class= 'little-btn btn-one-pro-care' src='../plants/img/accordion_btn.svg' alt="accordion btn">
-              <img class="hidden btn-two-pro-care" src='../plants/img/accordion_btn3.svg' alt="accordion btn">
+            <div class='price-item'>
+              <img class= 'little-btn btn-one-pro-care clickable-3' src='../plants/img/accordion_btn.svg' alt="accordion btn">
+              <img class="hidden btn-two-pro-care clickable-3" src='../plants/img/accordion_btn3.svg' alt="accordion btn">
               <div class="changeble-btn pro-care">Pro care
                 <div class="hidden added-info3">
                   <p>Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
                   <p class="per-hour"><span>$35</span> / per hour</p>
-                  <form action="#contacts">
-                    <button>Order</button>
-                  </form>
+                  <button><a href='#contacts'>Order</a></button>
                 </div>
               </div>
             </div>
@@ -229,7 +222,7 @@
                 <li>9 East 91st Street</li>
               </ul>
             </div>
-            <button><a href="tel:+12124560002">Call us</a></button>
+            <button><a href="tel:12124560002">Call us</a></button>
           </div>
           <div class='information sherrill hidden'>
             <div class="adresses-info">
@@ -244,7 +237,7 @@
                 <li>14 WEST Noyes BLVD</li>
               </ul>
             </div>
-            <button><a href="tel:+13159080004">Call us</a></button>
+            <button><a href="tel:13159080004">Call us</a></button>
           </div>
           <div class='information yonkers hidden'>
             <div class='adresses-info'>
@@ -259,7 +252,7 @@
                 <li>511 Warburton Ave</li>
               </ul>
             </div>
-            <button><a href="tel:+19146780003">Call us</a></button>
+            <button><a href="tel:19146780003">Call us</a></button>
           </div>
           <div class='information canan hidden'>
             <div class='adresses-info'>
@@ -274,7 +267,7 @@
                 <li>151 Charlotte Street</li>
               </ul>
             </div>
-            <button><a href="tel:+15853930001">Call us</a></button>
+            <button><a href="tel:15853930001">Call us</a></button>
           </div>
         </div> 
       </div>   
