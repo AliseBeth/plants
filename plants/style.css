@@ -41,15 +41,15 @@ time, mark, audio, video {
         display: flex;
         align-items: center;
         list-style-type: none;
-        position: absolute;
+        position: fixed;
         flex-direction: column;
         top: 0;
         left: 0;
         width: 100%;
-        height: 270px;
+        height: 100%;
         background-color: #EDF2EC;
         z-index: 2;
-        padding-top: 130px;
+        padding-top: 100px;
     }
     .headlist.open-menu li {
         margin-bottom: 30px;
@@ -369,7 +369,6 @@ time, mark, audio, video {
         padding: 14px 27px;
         background-color: #EDF2EC;
         margin-top: 42px;
-        cursor: pointer;  
     }
     .learn-more button:hover {
         background-color: #E06733;
@@ -549,10 +548,8 @@ time, mark, audio, video {
         font-family: Inika, 'Arial', sans-serif;
         font-size: 15px;
     }
-    
-    .one.chosen {
-        background-color: #b64f23;
-        border: 1px solid #b64f23;
+    .serv-btns button:hover {
+        background-color: #E06733;
         color: #ffffff;
     }
     .services {
@@ -593,6 +590,7 @@ time, mark, audio, video {
     }  
     .blur {
         filter: blur(4px);
+        transition: 1s;
     }
     
 }
@@ -637,10 +635,8 @@ time, mark, audio, video {
         font-size: 20px;
         margin-top: 40px;
     }
-    
-    .one.chosen {
-        background-color: #b64f23;
-        border: 1px solid #b64f23;
+    .serv-btns button:hover {
+        background-color: #E06733;
         color: #ffffff;
     }
     .services {
@@ -684,6 +680,7 @@ time, mark, audio, video {
     }
     .blur {
         filter: blur(4px);
+        transition: 1s;
     }
 }
 
@@ -737,11 +734,6 @@ time, mark, audio, video {
         background-color: #E06733;
         color: #ffffff;
     }
-    .one.chosen {
-        background-color: #b64f23;
-        border: 1px solid #b64f23;
-        color: #ffffff;
-    }
     .services {
         display: flex;
         flex-direction: row;
@@ -780,6 +772,7 @@ time, mark, audio, video {
     }
     .blur {
         filter: blur(4px);
+        transition: 1s;
     }
     
 
@@ -906,7 +899,7 @@ time, mark, audio, video {
         height: 16px;
         width: 16px;
         background-color: #D6E7D2;
-        padding: 18.89px 40px 124px 0px;
+        padding: 18.89px 40px 137.5px 0px;
         border-radius: 0px 20px 20px 0px;
         z-index: 2;
     }
@@ -914,7 +907,7 @@ time, mark, audio, video {
     .little-btn {
         height: 16px;
         width: 16px;
-        padding: 18.89px 40px 16px 0px;
+        padding: 18.89px 40px 15px 0px;
         background-color: #EDF2EC;
         border-radius: 0px 20px 20px 0px;
         
@@ -988,8 +981,7 @@ time, mark, audio, video {
         align-items: center;
         font-size: 20px;
         font-weight: 700;
-        font-family: Inter, 'Arial', sans-serif; 
-        
+        font-family: Inter, 'Arial', sans-serif;   
     }
     .prices-items {
         display: flex;
@@ -1131,16 +1123,8 @@ time, mark, audio, video {
         align-items: center;
         font-size: 20px;
         font-weight: 700;
-        font-family: Inter, 'Arial', sans-serif;
-        cursor: pointer;   
+        font-family: Inter, 'Arial', sans-serif;   
     }
-    .changeble-btn:hover {
-        background-color: #D6E7D2;
-    }
-    .little-btn:hover ~ .changeble-btn{
-        background-color: #D6E7D2;
-    }
-
     .prices-items {
         display: flex;
         flex-direction: column;
@@ -1222,12 +1206,9 @@ time, mark, audio, video {
         padding: 12px 34px 12px 30px; 
         background-color: #ffffff;
     }
-    .btn-call-us button {
-        cursor: pointer;
-    }
-    .btn-call-us button:hover {
-        background-color:#E06733;
-        color: #ffffff;
+    .btn-call-us button a {
+        text-decoration: none;
+        color: #E06733;
     }
     .btn-call-us {
         display: flex;
@@ -1243,8 +1224,11 @@ time, mark, audio, video {
         height: 16px;
         width: 16px;
         margin: 0px 0px 0px -53px;
+        transition: all 1s ease;
     }
-    
+    .little-btn:hover {
+        transform: rotate(180deg);
+    }
 }
 
 
@@ -1296,125 +1280,15 @@ time, mark, audio, video {
         background-color: #D6E7D2;
         padding: 17px 20px 17px 0px;
     }
-    .lady {
-        width: 100px;
-        margin-top: 132px;
-    }
-
-
-
     .city-button {
         display: flex;
         align-items: center;
+        margin-top: 85px;  
         box-shadow: 0 5px 5px rgba(0,0,0,0.25);
-        margin-top: 37px;
-        cursor: pointer;
     }
-    .city {
-        display: flex;
-        align-items: center;
-        justify-content: start;
-        font-family: Inter, 'Arial', sans-serif; 
-        font-size: 17px;
-        color: #717171;
-        background-color: #D6E7D2;
-        width: 140px;
-        height: 40px;
-        padding: 5px 175px 5px 20px;
-    }
-    .arrow-btn {
-        height: 16px;
-        width: 16px;
-        padding: 17px 15px 17px 0px;
-        background-color: #D6E7D2;
-    }
-    
-
-    .choose-city {
-        display: flex;
-        flex-direction: column;
-        background-color: #DCE9D9;
-        width: 366px;
-        height: 234px;
-        font-family: Inter, 'Arial', sans-serif; 
-        font-size: 16px;
-        line-height: 40px;
-    }
-    .city-list {
-        margin: 27px 35px 31px 35px;
-    }
-    .choose-city ul li {
-        list-style: none;
-        color: #499A18;
-        border-bottom: 1px solid #D9D9D9;
-        height: 35px;
-        cursor: pointer;
-    }
-    .choose-city ul li:hover {
-        color: #717171;
-        border-bottom: 1px solid #717171;
-    }
-    .city-active {
-        background-color: #C1E698;
-    }
-    .delete-shadow {
-        box-shadow:none;
-    }
-    .opened-btn{
-        border: none;
-        margin-top: 0px;
-    }
-    
-
-
-    .information {
-        display: flex;
-        flex-direction: column;
-        width: 366px;
-        height: 214px;
-        background-color: #EDF2EC;
-        border: 1px solid #000000;
-        border-radius: 20px;
-        align-items: center;
-        margin-top: 47px;
-        
-    }
-    .adresses-info {
-        display: flex;
-        font-family: Inter, 'Arial', sans-serif; 
-        font-size: 12px;
-        line-height: 40px;
-        width: 260px;
-        height: 115px;
-        padding: 17px 79px 0px 33px;
-    }
-    .information button {
-        font-family: Inika, 'Arial', sans-serif;
-        font-weight: 700;
-        font-size: 10px;
-        width: 122px;
-        height: 26px;
-        border-radius: 5px;
-        border: 1px solid #E06733;
-        background-color: #EDF2EC;
-        color: #717171;
-        margin-top: 24px;
-    }
-    .information button a {
-        color: #717171;
-        text-decoration: none;
-    }
-    .adresses-info ul li {
-        list-style: none;
-    }
-    .unique-list li {
-        color: #717171;
-    }
-    .common-list {   
-        width: 127px;
-    }
-    .hidden {
-        display: none;
+    .lady {
+        width: 100px;
+        margin-top: 132px;
     }
 }
 
@@ -1440,7 +1314,12 @@ time, mark, audio, video {
         text-align: center;
         margin-bottom: 100px;
     }
-    
+    .city-button {
+        display: flex;
+        align-items: center;
+        box-shadow: 0 5px 5px rgba(0,0,0,0.25);
+        margin-bottom: 250px;
+    }
     .city {
         display: flex;
         align-items: center;
@@ -1462,125 +1341,6 @@ time, mark, audio, video {
     }
     .lady {
         width: 200px;
-        margin-top: 60px;
-    }
-
-
-
-
-    .city-button {
-        display: flex;
-        align-items: center;
-        box-shadow: 0 5px 5px rgba(0,0,0,0.25);
-        margin-top: 37px;
-        
-        cursor: pointer;
-    }
-    .city {
-        display: flex;
-        align-items: center;
-        justify-content: start;
-        font-family: Inter, 'Arial', sans-serif; 
-        font-size: 20px;
-        color: #717171;
-        background-color: #D6E7D2;
-        width: 204px;
-        height: 40px;
-        padding: 5px 175px 5px 20px;
-    }
-    .arrow-btn {
-        height: 16px;
-        width: 16px;
-        padding: 17px 35px 17px 0px;
-        background-color: #D6E7D2;
-    }
-    
-
-    .choose-city {
-        display: flex;
-        flex-direction: column;
-        background-color: #DCE9D9;
-        width: 450px;
-        height: 234px;
-        font-family: Inter, 'Arial', sans-serif; 
-        font-size: 16px;
-        line-height: 40px;
-    }
-    .city-list {
-        margin: 27px 35px 31px 35px;
-    }
-    .choose-city ul li {
-        list-style: none;
-        color: #499A18;
-        border-bottom: 1px solid #D9D9D9;
-        height: 35px;
-        cursor: pointer;
-    }
-    .choose-city ul li:hover {
-        color: #717171;
-        border-bottom: 1px solid #717171;
-    }
-    .city-active {
-        background-color: #C1E698;
-    }
-    .delete-shadow {
-        box-shadow:none;
-    }
-    .opened-btn{
-        border: none;
-        margin-top: 0px;
-    }
-    
-
-
-    .information {
-        display: flex;
-        flex-direction: column;
-        width: 448px;
-        height: 214px;
-        background-color: #EDF2EC;
-        border: 1px solid #000000;
-        border-radius: 20px;
-        align-items: center;
-        margin-top: 47px;
-        
-    }
-    .adresses-info {
-        display: flex;
-        font-family: Inter, 'Arial', sans-serif; 
-        font-size: 16px;
-        line-height: 40px;
-        width: 337px;
-        height: 115px;
-        padding: 17px 79px 0px 33px;
-    }
-    .information button {
-        font-family: Inika, 'Arial', sans-serif;
-        font-weight: 700;
-        font-size: 10px;
-        width: 122px;
-        height: 26px;
-        border-radius: 5px;
-        border: 1px solid #E06733;
-        background-color: #EDF2EC;
-        color: #717171;
-        margin-top: 24px;
-    }
-    .information button a {
-        color: #717171;
-        text-decoration: none;
-    }
-    .adresses-info ul li {
-        list-style: none;
-    }
-    .unique-list li {
-        color: #717171;
-    }
-    .common-list {   
-        width: 127px;
-    }
-    .hidden {
-        display: none;
     }
 }
 
@@ -1625,7 +1385,6 @@ time, mark, audio, video {
         box-shadow: 0 5px 5px rgba(0,0,0,0.25);
         margin-top: 37px;
         margin-left: 259px;
-        cursor: pointer;
     }
     .city {
         display: flex;
@@ -1666,7 +1425,6 @@ time, mark, audio, video {
         color: #499A18;
         border-bottom: 1px solid #D9D9D9;
         height: 35px;
-        cursor: pointer;
     }
     .choose-city ul li:hover {
         color: #717171;
@@ -1714,7 +1472,6 @@ time, mark, audio, video {
         height: 26px;
         border-radius: 5px;
         border: 1px solid #E06733;
-        background-color: #EDF2EC;
         color: #717171;
         margin-top: 24px;
     }
